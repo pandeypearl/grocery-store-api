@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/pandeypearl/grocery-store-api#readme",
   "dependencies": {
+    "JSON": "^1.0.0",
     "json-server": "^0.17.1"
   }
 }
