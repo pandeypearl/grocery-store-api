@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/Bakery')
+fetch('https://grocery-item-api.onrender.com/Bakery')
     .then(res => {
         return res.json();
     })
@@ -33,7 +33,7 @@ fetch('http://localhost:3000/Bakery')
     })
     .catch(error => console.log(error));
 
-fetch('http://localhost:3000/Butchery')
+fetch('https://grocery-item-api.onrender.com/Butchery')
     .then(res => {
         return res.json();
     })
@@ -68,7 +68,7 @@ fetch('http://localhost:3000/Butchery')
     })
     .catch(error => console.log(error));
 
-fetch('http://localhost:3000/Dairy')
+fetch('https://grocery-item-api.onrender.com/Dairy')
     .then(res => {
         return res.json();
     })
@@ -103,7 +103,7 @@ fetch('http://localhost:3000/Dairy')
     })
     .catch(error => console.log(error));
 
-fetch('http://localhost:3000/Fresh')
+fetch('https://grocery-item-api.onrender.com/Fresh')
     .then(res => {
         return res.json();
     })
@@ -138,7 +138,7 @@ fetch('http://localhost:3000/Fresh')
     })
     .catch(error => console.log(error));
 
-fetch('http://localhost:3000/Frozen')
+fetch('https://grocery-item-api.onrender.com/Frozen')
     .then(res => {
         return res.json();
     })
@@ -173,7 +173,7 @@ fetch('http://localhost:3000/Frozen')
     })
     .catch(error => console.log(error));
 
-fetch('http://localhost:3000/Seafood')
+fetch('https://grocery-item-api.onrender.com/Seafood')
     .then(res => {
         return res.json();
     })
@@ -208,7 +208,7 @@ fetch('http://localhost:3000/Seafood')
     })
     .catch(error => console.log(error));
 
-fetch('http://localhost:3000/Vegan')
+fetch('https://grocery-item-api.onrender.com/Vegan')
     .then(res => {
         return res.json();
     })
@@ -243,7 +243,7 @@ fetch('http://localhost:3000/Vegan')
     })
     .catch(error => console.log(error));
 
-fetch('http://localhost:3000/Wine')
+fetch('https://grocery-item-api.onrender.com/Wine')
     .then(res => {
         return res.json();
     })
