@@ -1,4 +1,4 @@
-const jsonServer = required('json-server');
+const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router('grocery-db.json');
 const middlewares = jsonServer.defaults();
