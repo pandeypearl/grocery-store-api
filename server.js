@@ -1,6 +1,6 @@
 const jsonServer = required('json-server');
 const server = jsonServer.create();
-const router = jsonServer.router(grocery-db.json);
+const router = jsonServer.router('grocery-db.json');
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
 
