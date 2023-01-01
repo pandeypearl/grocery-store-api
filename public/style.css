@@ -1,5 +1,6 @@
 .wrapper{
     padding: 50px;
+    
 }
 
 .wrapper h1{
@@ -7,15 +8,13 @@
     font-size: 2.5rem;
 }
 
-.btn-container{
-}
 
 .btn-container button{
     display: inline-block;
     width: 100px;
     height: 30px;
     padding:0;
-    margin: 10px;
+    margin: 10px 5px;
 }
 
 .bakery-btn{background-color: var(--baker);}
@@ -191,8 +190,52 @@
     font-weight: 600;
 }
 
+/* ABOUT PAGE */
+.about-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.about-container{
+    width: 80%;
+}
+
+.about-container h2{
+    font-weight: 900;
+    padding:0;
+    margin:0;
+}
+
+.about-container p{
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.about-container .about-section{
+    margin: 100px 0;
+}
+
+.about-section .code{
+    background-color:  #e5e4e2;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.about-section div{
+    margin: 50px 0;
+}
+
 @media (max-width: 768px){
     .wrapper{
         padding: 30px;
+    }
+    .about-wrapper{
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px){
+    .about-section{
+        width: 90%;
     }
 }

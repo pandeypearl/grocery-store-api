@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store API | About</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- SCRIPTS -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><i class="bi bi-house-fill"></i></a>
+        <a href="about.html" class="active">about</a>
+
+        <!-- dropdown menu -->
+        <div class="dropdown">
+            <!--<a class ="dropdownbtn" href="">API</a>-->
+            <button class="dropdown-btn" onclick="dropDownToggle()">API</button>
+            <div class="dropdown-content">
+                <a href="http://localhost:3000/Bakery" target="_blank">bakery</a>
+                <a href="http://localhost:3000/Butchery" target="_blank">butchery</a>
+                <a href="http://localhost:3000/Dairy" target="_blank">dairy</a>
+                <a href="http://localhost:3000/Fresh" target="_blank">fresh Produce</a>
+                <a href="http://localhost:3000/Frozen" target="_blank">frozen food</a>
+                <a href="http://localhost:3000/Seafood" target="_blank">seafood</a>
+                <a href="http://localhost:3000/Vegan" target="_blank">vegan</a>
+                <a href="http://localhost:3000/Wine" target="_blank">wine</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about-wrapper">
+        <div class="about-container">
+            <div class="about-section">
+                <h2>Grocery Api</h2>
+                <p>This is a mock grocery items API intended especially for front-end develeopers
+                    like myself who would need an item list for simple projects. There is no API key required 
+                    to interact with this API. You can interact with this
+                    data using <strong>GET</strong>, <strong>POST</strong>, <strong>PUT</strong>, <strong>PATCH</strong>,
+                    and <strong>DELETE</strong>. Please note that there is no database infrastructure for this API,
+                    therefore the use of <strong>PUT</strong>, <strong>PATCH</strong>, and <strong>DELETE</strong>
+                    will not be saved on the api server.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h2>There are 5 sections :</h2>
+                <div>
+                    <p><strong>1. Bakery</strong> - 
+                        <small>with different types of bagel, bread, cake, muffin, and pastry items. </small></p>
+                    <p>As an example, this data can be accessed like this: <br></p>
+                    <p class="code">
+                        <code>
+                        fetch('https://grocery-api-mexb.onrender.com/Bakery') <br>
+                        /* rest of code here */    
+                        </code>
+                    </p>
+                </div>
+    
+                <div>
+                    <p><strong>2. Butchery</strong> - 
+                        <small>with different types of beef, poultry, lamb, and pork items.</small>
+                    </p>
+                    <p>As an example, this data can be accessed like this: <br></p>
+                    <p class="code">
+                        <code>
+                        fetch('https://grocery-api-mexb.onrender.com/Butchery') <br>
+                        /* rest of code here */    
+                        </code>
+                    </p>
+                </div>
+    
+                <div>
+                    <p><strong>3. Dairy</strong> - 
+                        <small>with different types of butter, cheese, cream, ice-cream, milk, and yogurt items.</small>
+                    </p>
+                    <p>As an example, this data can be accessed like this: <br></p>
+                    <p class="code">
+                        <code>
+                        fetch('https://grocery-api-mexb.onrender.com/Dairy') <br>
+                        /* rest of code here */    
+                        </code>
+                    </p>
+                </div>
+    
+                <div>
+                    <p><strong>4. Fresh Produce</strong> - 
+                        <small>with different types of fresh fruit, herb, and vegetable items.</small>
+                    </p>
+                    <p>As an example, this data can be accessed like this: <br></p>
+                    <p class="code">
+                        <code>
+                        fetch('https://grocery-api-mexb.onrender.com/Fresh') <br>
+                        /* rest of code here */    
+                        </code>
+                    </p>
+                </div>
+    
+                <div>
+                    <p><strong>5. Frozen Foods</strong> - 
+                        <small>with different types of frozen meal, meat, seafood, green, and potato items.</small>
+                    </p>
+                    <p>As an example, this data can be accessed like this: <br></p>
+                    <p class="code">
+                        <code>
+                        fetch('https://grocery-api-mexb.onrender.com/Frozen') <br>
+                        /* rest of code here */    
+                        </code>
+                    </p>
+                </div>
+    
+                <div>
+                    <p><strong>6. Seafood</strong> - 
+                        <small>with different types of fish, roe, and shellfish items.</small>
+                    </p>
+                    <p>As an example, this data can be accessed like this: <br></p>
+                    <p class="code">
+                        <code>
+                        fetch('https://grocery-api-mexb.onrender.com/Seafood') <br>
+                        /* rest of code here */    
+                        </code>
+                    </p>
+                </div>
+    
+                <div>
+                    <p><strong>7. Vegan</strong> - 
+                        <small>with different types of meal, snack, and dip items.</small>
+                    </p>
+                    <p>As an example, this data can be accessed like this: <br></p>
+                    <p class="code">
+                        <code>
+                        fetch('https://grocery-api-mexb.onrender.com/Vegan') <br>
+                        /* rest of code here */    
+                        </code>
+                    </p>
+                </div>
+    
+                <div>
+                    <p><strong>8. Wine</strong> - 
+                        <small>with different types red wine, white wine, and rose items.</small>
+                    </p>
+                    <p>As an example, this data can be accessed like this: <br></p>
+                    <p class="code">
+                        <code>
+                        fetch('https://grocery-api-mexb.onrender.com/Wine') <br>
+                        /* rest of code here */    
+                        </code>
+                    </p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>Designed and Developed by &copy; <a href="https://www.prettypandey.dev" target="_blank">Pretty Pandey</a> <span id="year"></span></p>
+    </footer>
+
+    
+</body>
+</html>

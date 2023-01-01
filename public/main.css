@@ -66,6 +66,12 @@ nav{
     padding: 0 50px;
 }
 
+nav .active{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    color: gainsboro;
+}
+
 /* Dropdown menu */
 .dropdown{
     position: relative;
