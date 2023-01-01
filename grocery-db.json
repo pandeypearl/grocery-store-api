@@ -1130,7 +1130,7 @@
             "price": 35
         }
     ],
-    "Fresh Produce": [
+    "Fresh": [
         {
             "id": "pa03474f90874616b2cdde51081792f0",
             "type": "fruit",
@@ -1388,7 +1388,7 @@
             "price": 16
         }
     ],
-    "Frozen Foods": [
+    "Frozen": [
         {
             "id": "a56e57d5194c4b0a9948651fce60c7fe",
             "type": "meals",

@@ -1,0 +1,198 @@
+.wrapper{
+    padding: 50px;
+}
+
+.wrapper h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.btn-container{
+}
+
+.btn-container button{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    padding:0;
+    margin: 10px;
+}
+
+.bakery-btn{background-color: var(--baker);}
+.butchery-btn{background-color: var(--butcher);}
+.dairy-btn{background-color: var(--dairy);}
+.fresh-btn{background-color: var(--fresh);}
+.frozen-btn{background-color: var(--frozen);}
+.seafood-btn{background-color: var(--seafood);}
+.vegan-btn{background-color: var(--vegan);}
+.wine-btn{background-color: var(--wine);}
+
+#Butchery, #Dairy, #Fresh, #Frozen, #Seafood, #Vegan, #Wine{
+    display: none;
+}
+
+.product-container{
+    margin: 100px 0;
+}
+
+.section-heading{
+    margin: 50px 0;
+}
+
+.bakery-heading h2{color: var(--baker);}
+.butchery-heading h2{color: var(--butcher);}
+.dairy-heading h2{color: var(--dairy);}
+.fresh-heading h2{color: var(--fresh);}
+.frozen-heading h2{color: var(--frozen);}
+.seafood-heading h2{color: var(--seafood);}
+.vegan-heading h2{color: var(--vegan);}
+.wine-heading h2{color: var(--wine);}
+
+
+.section-heading h2{
+    margin:0;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgb(0,0,0,0.2);
+}
+.section-heading p{
+    margin:0;
+    font-weight: 600;
+}
+
+.section-content{display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 50px;}
+
+.product{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow-3);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.bakery-products{
+    border-top: 6px solid var(--baker);
+    border-bottom: 6px solid var(--baker);
+}
+
+.butchery-products{
+    border-top: 6px solid var(--butcher);
+    border-bottom: 6px solid var(--butcher);
+}
+
+.dairy-products{
+    border-top: 6px solid var(--dairy);
+    border-bottom: 6px solid var(--dairy);
+}
+
+.fresh-products{
+    border-top: 6px solid var(--fresh);
+    border-bottom: 6px solid var(--fresh);
+}
+
+.frozen-products{
+    border-top: 6px solid var(--frozen);
+    border-bottom: 6px solid var(--frozen);
+}
+
+.seafood-products{
+    border-top: 6px solid var(--seafood);
+    border-bottom: 6px solid var(--seafood);
+}
+
+.vegan-products{
+    border-top: 6px solid var(--vegan);
+    border-bottom: 6px solid var(--vegan);
+}
+
+.wine-products{
+    border-top: 6px solid var(--wine);
+    border-bottom: 6px solid var(--wine);
+}
+
+.product span{
+    display: block;
+}
+
+.product-id{
+    text-align: right;
+    font-size: 0.7rem;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+.product .product-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-info img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+.product-info .name{
+    font-weight: 800;
+}
+
+.product .type{
+    font-size: 0.8rem;
+}
+
+.product .desc{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.product .price{
+    font-weight: 600;
+}
+
+.raw-data{
+    position: absolute;
+    right:0;
+    left:0;
+    bottom:100%;
+    font-size: 0.7rem;
+    padding: 20px;
+    transition: .5s ease;
+    overflow: hidden;
+    height: 0;
+    -webkit-transform: translate(-0%, -0%);
+    -ms-transform: translate(-0%, -0%);
+    transform: translate(-0%, -0%);
+}
+
+.product:hover .raw-data{
+    bottom: 0;
+    height: 100%;
+}
+
+.raw-data div{
+    display: flex;
+    margin: 10px 0;
+}
+
+.raw-data div span:nth-child(1){
+    width: 30%;
+    font-weight: 900;
+}
+
+.raw-data div span:nth-child(2){
+    width: 60%;
+    font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .wrapper{
+        padding: 30px;
+    }
+}

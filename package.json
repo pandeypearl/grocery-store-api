@@ -1,0 +1,23 @@
+{
+  "name": "grocery-store-api",
+  "version": "1.0.0",
+  "description": "Simple Grocery Store API made for especially for front end development projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/pandeypearl/grocery-store-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pandeypearl/grocery-store-api/issues"
+  },
+  "homepage": "https://github.com/pandeypearl/grocery-store-api#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}

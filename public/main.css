@@ -1,0 +1,113 @@
+:root{
+    /* colours */
+    --black: #2C2C34;
+    --background: whitesmoke;
+    --fresh: #8DAB7F;
+    --frozen: #587B7F;
+    --vegan: #CFEE9E;
+    --wine: #FFD6C0;
+    --baker: #E4BB97;
+    --butcher: #F0A868;
+    --dairy: #F3FFBD;
+    --seafood: #B4D4EE;
+
+    /* shadows */
+    --btn-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --box-shadow-1: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    --box-shadow-2: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    --box-shadow-3: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    --box-shadow-4: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+    background-color: var(--background);
+    min-height: 100vh;
+    position: relative;
+    margin:0;
+    padding: 0;
+}
+
+a{
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover{
+   text-decoration: line-through;
+   text-decoration-thickness: 2px;
+}
+
+button{
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: var(--btn-box-shadow);
+}
+
+button:hover{
+    opacity: .6;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+    height: 10vh;
+    padding: 0 50px;
+}
+
+/* Dropdown menu */
+.dropdown{
+    position: relative;
+}
+
+.dropdown-btn{
+    font-weight: 600;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    height: auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: right;
+    box-shadow: var(--btn-box-shadow);
+    width: 130px;
+    border-radius: 8px;
+}
+
+.dropdown-content a{
+    display: block;
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: right;
+    padding: 0 50px;
+}
+
+@media (max-width: 768px){
+    nav, footer{
+        padding: 0 30px;
+    }
+}

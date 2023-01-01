@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store API</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- SCRIPTS -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <a href=""><i class="bi bi-house-fill"></i></a>
+        <a href="">about</a>
+
+        <!-- dropdown menu -->
+        <div class="dropdown">
+            <!--<a class ="dropdownbtn" href="">API</a>-->
+            <button class="dropdown-btn" onclick="dropDownToggle()">API</button>
+            <div class="dropdown-content">
+                <a href="http://localhost:3000/Bakery" target="_blank">bakery</a>
+                <a href="http://localhost:3000/Butchery" target="_blank">butchery</a>
+                <a href="http://localhost:3000/Dairy" target="_blank">dairy</a>
+                <a href="http://localhost:3000/Fresh" target="_blank">fresh Produce</a>
+                <a href="http://localhost:3000/Frozen" target="_blank">frozen food</a>
+                <a href="http://localhost:3000/Seafood" target="_blank">seafood</a>
+                <a href="http://localhost:3000/Vegan" target="_blank">vegan</a>
+                <a href="http://localhost:3000/Wine" target="_blank">wine</a>
+            </div>
+        </div>
+        
+    </nav>
+
+    
+    <div class="wrapper">
+        <h1>Grocery Store API</h1>
+
+        <div class="btn-container">
+            <button class="bakery-btn" onclick="toggleSection('Bakery')">Bakery</button>
+            <button class="butchery-btn" onclick="toggleSection('Butchery')">Butchery</button>
+            <button class="dairy-btn" onclick="toggleSection('Dairy')">Dairy</button>
+            <button class="fresh-btn" onclick="toggleSection('Fresh')">Fresh Produce</button>
+            <button class="frozen-btn" onclick="toggleSection('Frozen')">Frozen Foods</button>
+            <button class="seafood-btn" onclick="toggleSection('Seafood')">Seafood</button>
+            <button class="vegan-btn" onclick="toggleSection('Vegan')">Vegan</button>
+            <button class="wine-btn" onclick="toggleSection('Wine')">Wine</button>
+        </div>
+
+        <div class="product-container">
+            <div id="Bakery" class="section bakery">
+                <div class="section-heading bakery-heading">
+                    <h2>Bakery Items</h2>
+                    <p>* hover on each item to view the raw data</p>
+                </div>
+                <div class="section-content bakery-content"></div>
+            </div>
+
+            <div id="Butchery" class="section butchery">
+                <div class="section-heading butchery-heading">
+                    <h2>Butchery Items</h2>
+                    <p>* hover on each item to view the raw data</p>
+                </div>
+                <div class="section-content butchery-content"></div>
+            </div>
+
+            <div id="Dairy" class="section dairy">
+                <div class="section-heading dairy-heading">
+                    <h2>Dairy Items</h2>
+                    <p>* hover on each item to view the raw data</p>
+                </div>
+                <div class="section-content dairy-content"></div>
+            </div>
+
+            <div id="Fresh" class="section fresh">
+                <div class="section-heading fresh-heading">
+                    <h2>Fresh Items</h2>
+                    <p>* hover on each item to view the raw data</p>
+                </div>
+                <div class="section-content fresh-content"></div>
+            </div>
+
+            <div id="Frozen" class="section frozen">
+                <div class="section-heading frozen-heading">
+                    <h2>Frozen Items</h2>
+                    <p>* hover on each item to view the raw data</p>
+                </div>
+                <div class="section-content frozen-content"></div>
+            </div>
+
+            <div id="Seafood" class="section seafood">
+                <div class="section-heading seafood-heading">
+                    <h2>Seafood Items</h2>
+                    <p>* hover on each item to view the raw data</p>
+                </div>
+                <div class="section-content seafood-content"></div>
+            </div>
+            <div id="Vegan" class="section vegan">
+                <div class="section-heading vegan-heading">
+                    <h2>Vegan Items</h2>
+                    <p>* hover on each item to view the raw data</p>
+                </div>
+                <div class="section-content vegan-content"></div>
+            </div>
+
+            <div id="Wine" class="section wine">
+                <div class="section-heading wine-heading">
+                    <h2>Wine Items</h2>
+                    <p>* hover on each item to view the raw data</p>
+                </div>
+                <div class="section-content wine-content"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Designed and Developed by &copy; <a href="https://www.prettypandey.dev" target="_blank">Pretty Pandey</a> <span>2023</span></p>
+    </footer>
+</body>
+</html>
